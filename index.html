@@ -9,7 +9,7 @@
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <body style="margin: 0px; overflow: hidden;">
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+        <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; patternRatio: 0.75">
 
         <a-assets>
             <a-asset-item id="spencer" src="/assets/staff/spencer.fbx"></a-asset-item>
