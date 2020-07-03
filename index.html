@@ -13,17 +13,14 @@
         <a-scene embedded="" vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" inspector="" keyboard-shortcuts="" screenshot="">
 
         <a-assets>
-            <a-asset-item id="animated-asset" src="/models/unhstoke.gltf"></a-asset-item>
+            <a-asset-item id="spencer" src="/assets/staff/spencer.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker type="barcode" value="6" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-box position="0 0.5 0" color="yellow" material="" geometry=""></a-box>
+        <a-marker preset="custom" type="pattern" url="/assets/staff/spencer.patt"material="" arjs-anchor="" arjs-hit-testing="">
+          <a-entity animation-mixer="" gltf-model="spencer" scale="2 2 2">
+          </a-entity>
         </a-marker>
 
-        <a-marker id="animated-marker" type="barcode" value="6" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity animation-mixer="" gltf-model="#animated-asset" scale="2 2 2">
-            </a-entity>
-        </a-marker>
 
         <a-entity camera=""></a-entity>
         <canvas class="a-canvas" data-aframe-canvas="true" width="2091" height="1569"></canvas><div class="a-loader-title" style="display: none;"></div><a-entity light="" data-aframe-default-light="" aframe-injected=""></a-entity><a-entity light="" position="" data-aframe-default-light="" aframe-injected=""></a-entity></a-scene>
