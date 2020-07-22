@@ -10,7 +10,7 @@
 </head>
     <body style="margin: 0px 0px 0px -293.5px; overflow: hidden; width: 697.333px; height: 523px;">
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded="" vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" inspector="" keyboard-shortcuts="" screenshot="">
+        <a-scene embedded="" vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
@@ -20,130 +20,14 @@
             <a-box position='0 0.5 0' color="yellow"></a-box>
         </a-marker>
 
-        <a-marker id="animated-marker" type='barcode' value='1'>
+        <a-marker id="animated-marker" type='barcode' value='01'>
             <a-entity
                 animation-mixer
                 gltf-model="#animated-asset"
                 scale="2 2 2">
             </a-entity>
         </a-marker>
-        
-        <a-marker type="barcode" value="02" material="" arjs-anchor="" arjs-hit-testing="">
-             <a-entity gltf-model="src='assets/staff/JackDangerMcCallum.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="03" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/staff/ava.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="04" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/staff/peter.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="05" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/staff/faith.gltf')"></a-entity>
-        </a-marker>        
-        
-        <a-marker type="barcode" value="06" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/staff/jimmy.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="07" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/staff/grace.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="08" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/staff/kyle.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="09" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/staff/olivia.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="10" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/staff/tricia.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="11" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/528/a.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="12" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/528/b.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="13" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/530/a.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="14" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/530/b.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="15" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/533/a.gltf')"></a-entity>
-        </a-marker>        
-        
-        <a-marker type="barcode" value="16" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/533/b.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="17" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/534/a.gltf')"></a-entity>
-        </a-marker>        
-        
-        <a-marker type="barcode" value="18" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/534/b.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="19" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/535/a.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="20" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/535/b.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="21" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/536/a.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="22" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/536/b.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="23" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/537/a.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="24" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/537/b.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="25" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/538/a.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="26" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/538/b.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="27" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/539/a.gltf')"></a-entity>
-        </a-marker>        
-        
-        <a-marker type="barcode" value="28" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/539/b.gltf')"></a-entity>
-        </a-marker>
-        
-        <a-marker type="barcode" value="29" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/540/a.gltf')"></a-entity>
-        </a-marker>
-            
-        <a-marker type="barcode" value="30" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/residents/540/b.gltf')"></a-entity>
-        </a-marker>    
-
+       
         <a-entity camera=""></a-entity>
         </a-scene>
 
