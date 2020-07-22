@@ -12,12 +12,24 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded="" vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" inspector="" keyboard-shortcuts="" screenshot="">
 
-        <a-marker type="barcode" value="01" material="" arjs-anchor="" arjs-hit-testing="">
-            <a-entity gltf-model="url('assets/staff/Dave.gltf')"></a-entity>
+        <a-assets>
+            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-marker type='barcode' value='7'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='1'>
+            <a-entity
+                animation-mixer
+                gltf-model="#animated-asset"
+                scale="2 2 2">
+            </a-entity>
         </a-marker>
         
         <a-marker type="barcode" value="02" material="" arjs-anchor="" arjs-hit-testing="">
-             <a-entity gltf-model="url('assets/staff/JackDangerMcCallum.gltf')"></a-entity>
+             <a-entity gltf-model="src='assets/staff/JackDangerMcCallum.gltf')"></a-entity>
         </a-marker>
             
         <a-marker type="barcode" value="03" material="" arjs-anchor="" arjs-hit-testing="">
